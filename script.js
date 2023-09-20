@@ -1,5 +1,6 @@
 
 
+
 function getComputerChoice() {
     let computerInt = Math.floor(Math.random() * 3);
     let computerChoice;
@@ -19,3 +20,19 @@ return computerChoice;
 }
 
 console.log(getComputerChoice());
+
+
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+
+
+function playRound(playerSelection,computerSelection) {
+
+    let playerChoice = playerSelection.toLowerCase();
+
+    if (playerChoice === computerSelection) {
+        return "Tie game. Play again";
+    }
+
+
+}
